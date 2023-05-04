@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicicionando elementos</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            height: 100vh;
+            background-color: aqua;
+            background-image: url("imagem/target001.png");
+            background-size: 100% 100%;
+
+            position: relative;
+        }
+
+        .conteudo{
+            height: 150px;
+            width: 300px;
+            background-color: coral;
+            background-image: url("imagem/target001.png");
+            background-size: 100% 100%;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(20px, 20px);
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <article class="conteudo"></article>
+    </section>
+</body>
+</html>
