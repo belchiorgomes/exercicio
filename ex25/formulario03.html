@@ -9,15 +9,15 @@
 <body>
     <h1>Teste de Formulário</h1>
 
-    <form action="arquivo.php" method="post">
+    <form action="arquivo.php" method="post" autocomplete="on">
         <p>
             <label for="usuario">Usuário</label>
-            <input type="text" name="usuario" id="usuario" required minlength="5" maxlength="15" placeholder="Nome do usuario">
+            <input type="text" name="usuario" id="usuario" required minlength="5" maxlength="15" placeholder="Nome do usuario" autocomplete="username">
         </p>
 
         <p>
            <label for="senha">Senha</label>
-           <input type="password" name="senha" id="senha" required minlength="8" placeholder="Sua senha"> 
+           <input type="password" name="senha" id="senha" required minlength="8" placeholder="Sua senha" autocomplete="new-password"> 
         </p>
 
         <p>
