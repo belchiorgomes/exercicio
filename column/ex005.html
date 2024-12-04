@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>column-span</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main{
+            width: clamp(20vw, 80vw, 90vw);
+            padding: 20px;
+            border-radius: 12px;
+            background-color: rgb(163, 163, 163);
+            margin: 20px auto;
+        }
+
+        main > header h1{
+            font-size: clamp(2rem, 3.5vw, 4rem);
+            margin-block: 8px;
+        }
+
+        main > section{
+            column-count: 3;
+            column-rule-style: inset;
+            column-rule-color: currentColor;
+            column-rule-width: thick;
+            /*column-fill: balance;*/
+            column-gap: 2em;
+        }
+
+        main > section p:nth-child(2){
+            column-span: all;
+            padding-block: 2em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Titulo da Pagina</h1>
+        </header>
+
+        <section>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque eligendi tenetur at. Eveniet sint quam optio a voluptatum laboriosam at doloribus molestias, cumque mollitia dolores placeat explicabo, praesentium ad unde.
+                Voluptas nam tenetur nisi quos quibusdam assumenda hic veritatis id, sequi ducimus animi nulla ipsam quod. Impedit accusamus, ipsum rerum eligendi delectus cum error eveniet sequi praesentium, blanditiis minus. Nesciunt?
+                Vero quibusdam alias laudantium illo? Reprehenderit quas reiciendis expedita facilis maiores suscipit excepturi! Non rerum doloremque aperiam ea, veniam deserunt doloribus, possimus, delectus suscipit unde dolor totam blanditiis omnis ipsa!
+                Suscipit, illum ipsum cum mollitia aliquam minima molestiae non repellendus nam neque beatae amet soluta esse sed ab sint, reprehenderit eum expedita natus voluptas in, iste reiciendis quibusdam. Corporis, quia.
+            </p>
+
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, architecto voluptas. Quibusdam sunt ipsam debitis natus voluptas quas voluptates provident pariatur fugiat ipsa laboriosam, quod iure. Omnis qui illo autem!
+            </p>
+        </section>
+    </main>
+</body>
+</html>
