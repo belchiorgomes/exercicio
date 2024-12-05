@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid container</title>
+    <style>
+        main{
+            display: grid;
+            gap: 12px;
+            grid-template-columns: 70vw 1fr;
+            grid-template-rows: 100px auto auto 100px;
+            grid-template-areas: "header header"
+                                 "nav nav"
+                                 "section article"
+                                 "footer footer";
+        }
+
+        main > header{
+            grid-area: header;
+        }
+
+        main > nav{
+            grid-area: nav;
+        }
+
+        main > section{
+            grid-area: section;
+        }
+
+        main > article{
+            grid-area: article;
+        }
+
+        main > footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Titulo da Pagina</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">item 1</a></li>
+                <li><a href="#">item 2</a></li>
+                <li><a href="#">item 3</a></li>
+                <li><a href="#">item 4</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <h1>Titulo da Seção</h1>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ut quod numquam autem voluptatibus quam aspernatur corporis, quisquam, qui rerum ea debitis aliquam voluptate, dicta exercitationem? Obcaecati eum error necessitatibus!
+                Inventore, cupiditate repudiandae voluptatem delectus ex laborum tempore commodi officia rem asperiores ab animi blanditiis quam at nobis. Alias optio enim quisquam quasi ab ex hic architecto, ducimus aut aspernatur.
+                Temporibus, vel dicta laboriosam dolorum sapiente quod. Repudiandae saepe reprehenderit voluptatum est deserunt iste a facilis obcaecati voluptate, fugit distinctio odio repellat ullam perspiciatis illum? Assumenda earum iste omnis dolorem.
+                Numquam, eos, molestiae culpa quo expedita dolor ab aperiam qui eligendi dicta impedit quibusdam, eveniet iure obcaecati? Aspernatur minima repellendus reiciendis facere qui tempora earum! Aspernatur aliquid quos incidunt sed.
+            </p>
+        </section>
+
+        <article>
+            <h3>Artico Segundario</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ad quo veniam nihil, totam, adipisci velit laborum quod, odit incidunt nulla voluptates impedit minus inventore maxime expedita voluptas voluptatem doloribus?
+            </p>
+        </article>
+
+        <footer>
+            <h3>Site criado por Breno Belchior de Freitas Gomes</h3>
+        </footer>
+    </main>
+</body>
+</html>
